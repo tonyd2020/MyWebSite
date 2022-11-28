@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/tony.css')}}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="{{url_for('home')}}">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about">About</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div>Anthony Dera</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item-wrapper" onclick="location.href='portfolio1';" style="cursor:pointer">
+                    <div class="portfolio-img-background" style="background-image: url(static/images/portfolio1.jpg)">
+                    </div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <h1>Network Operations</h1>
+                        </div>
+                        <div class="subtitle">
+                            Network Operations
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="portfolio-item-wrapper" onclick="location.href='portfolio2.html';" style="cursor:pointer">
+                    <div class="portfolio-img-background" style="background-image: url(static/images/portfolio2.jpg)">
+                    </div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <h1>Network Engineering</h1>
+                        </div>
+                        <div class="subtitle">
+                            Network Engineering
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper" onclick="location.href='portfolio3.html';" style="cursor:pointer">
+                    <div class="portfolio-img-background" style="background-image: url(static/images/portfolio3.jpg)">
+                    </div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <h1>Network Architecture</h1>
+                        </div>
+                        <div class="subtitle">
+                            Subtitle text for portfolio 3
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper" onclick="location.href='https://www.tynepacific.com.au/';" style="cursor:pointer">
+                    <div class="portfolio-img-background" style="background-image: url(static/images/portfolio4.jpg)">
+                    </div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <h1>Web Development</h1>
+                        </div>
+                        <div class="subtitle">
+                            Tyne Pacific
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper" onclick="location.href='portfolio5.html';" style="cursor:pointer">
+                    <div class="portfolio-img-background" style="background-image: url(static/images/portfolio5.jpg)">
+                    </div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+<!--                            <img src="{{url_for('static', filename='images/logos/logo5.png')}}">-->
+                        </div>
+                        <div class="subtitle">
+                            Subtitle text for portfolio 5
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper" onclick="location.href='portfolio6.html';" style="cursor:pointer">
+                    <div class="portfolio-img-background" style="background-image: url(static/images/portfolio6.jpg)">
+                    </div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+<!--                            <img src="{{url_for('static', filename='images/logos/logo6.png')}}">-->
+                        </div>
+                        <div class="subtitle">
+                            Subtitle text for portfolio 6
+                        </div>
+                    </div>
+                </div>
+<!--                <div class="portfolio-item-wrapper" onclick="location.href='portfolio7.html';" style="cursor:pointer">-->
+<!--                    <div class="portfolio-img-background" style="background-image: url(static/images/portfolio7.jpg)">-->
+<!--                    </div>-->
+<!--                    <div class="img-text-wrapper">-->
+<!--                        <div class="logo-wrapper">-->
+<!--&lt;!&ndash;                            <img src="{{url_for('static', filename='images/logos/logo7.png')}}">&ndash;&gt;-->
+<!--                        </div>-->
+<!--                        <div class="subtitle">-->
+<!--                            Subtitle text for portfolio 7-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="portfolio-item-wrapper" onclick="location.href='portfolio8.html';" style="cursor:pointer">-->
+<!--                    <div class="portfolio-img-background" style="background-image: url(static/images/portfolio8.jpg)">-->
+<!--                    </div>-->
+<!--                    <div class="img-text-wrapper">-->
+<!--                        <div class="logo-wrapper">-->
+<!--&lt;!&ndash;                            <img src="{{url_for('static', filename='images/logos/logo8.png')}}">&ndash;&gt;-->
+<!--                        </div>-->
+<!--                        <div class="subtitle">-->
+<!--                            Subtitle text for portfolio 8-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="portfolio-item-wrapper" onclick="location.href='portfolio9.html';" style="cursor:pointer">-->
+<!--                    <div class="portfolio-img-background" style="background-image: url(static/images/portfolio9.jpg)">-->
+<!--                    </div>-->
+<!--                    <div class="img-text-wrapper">-->
+<!--                        <div class="logo-wrapper">-->
+<!--&lt;!&ndash;                            <img src="{{url_for('static', filename='images/logos/logo9.png')}}">&ndash;&gt;-->
+<!--                        </div>-->
+<!--                        <div class="subtitle">-->
+<!--                            Subtitle text for portfolio 9-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken');
+
+        })
+    })
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+
+        })
+    })
+</script>
+
+</html>

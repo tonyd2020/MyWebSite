@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>About</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/tony.css')}}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="{{url_for('home')}}">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="{{url_for('about')}}">About</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div>Anthony Dera</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="two-column-portfolio-wrapper">
+                <div class="profile-image-wrapper">
+                    <img src="static/images/netops1.jpg" alt="">
+
+                </div>
+                <div class="profile-content-wrapper">
+                    <h1>Cisco Certified Network Professional</h1>
+                    <p>Extensive experience in Cisco Layer 2 and 3 based Networking platforms ranging from the Catalyst
+                        family switches to the Cisco GSR Internet routers </p>
+
+                </div>
+            </div>
+
+            <div class="two-column-portfolio-wrapper">
+                <div class="profile-image-wrapper">
+                    <img src="static/images/netops2.jpg" alt="" height=200>
+
+                </div>
+                <div class="profile-content-wrapper">
+                    <h1>Juniper Networks</h1>
+                    <p>Extensive experience in Telecommunications and Networking </p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
